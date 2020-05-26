@@ -6,7 +6,7 @@ composer require tsung/nova-custom-action
 php artisan migrate
 ```
 
-add "CustomAction::make()" to nova resource
+add "CustomAction::make()" to resource fields
 add to the last one to make the button same location as default action
 
 ```
@@ -23,6 +23,12 @@ public function fields(Request $request)
 ```
 
 add which resource have this action on actions resource
+
+====================
+
+changes => what will be updated when running the action
+
+rules => to determine which resource can execute the action
 
 ====================
 
