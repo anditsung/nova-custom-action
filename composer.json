@@ -1,0 +1,38 @@
+{
+    "name": "tsung/nova-custom-action",
+    "description": "A Laravel Nova tool.",
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "authors": [
+        {
+            "name": "anditsung",
+            "email": "anditsung@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0",
+        "laravel/nova": "*",
+        "optimistdigital/nova-multiselect-field": "^1.9",
+        "whitecube/nova-flexible-content": "^0.2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tsung\\NovaCustomAction\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tsung\\NovaCustomAction\\ToolServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
